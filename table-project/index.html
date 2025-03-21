@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>企业数据表格</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="table-container">
+        <div class="table-controls">
+            <input type="text" id="search" placeholder="搜索...">
+            <select id="sort">
+                <option value="0">默认排序</option>
+                <option value="1">升序</option>
+                <option value="2">降序</option>
+            </select>
+        </div>
+        <table id="data-table">
+            <thead>
+                <tr>
+                    <th data-sort="name">姓名</th>
+                    <th data-sort="position">职位</th>
+                    <th data-sort="department">部门</th>
+                    <th data-sort="salary">薪资</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- 数据将通过JavaScript动态插入 -->
+            </tbody>
+        </table>
+        <div class="pagination">
+            <button id="prev">上一页</button>
+            <span id="page-info"></span>
+            <button id="next">下一页</button>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
