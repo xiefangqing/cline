@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>城市天际线</title>
+    <style>
+        body {
+            margin: 0;
+            height: 100vh;
+            background: linear-gradient(to bottom, #1a1a2e 0%, #16213e 50%, #0f3460 100%);
+            display: flex;
+            justify-content: center;
+            align-items: flex-end;
+            overflow: hidden;
+        }
+        .skyline {
+            display: flex;
+            align-items: flex-end;
+            gap: 4px;
+            padding-bottom: 20px;
+        }
+        .building {
+            background: #0a0a0a;
+            width: 40px;
+            position: relative;
+            border-radius: 2px 2px 0 0;
+        }
+        .building::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: linear-gradient(90deg, 
+                rgba(255,255,255,0.1) 0%,
+                rgba(255,255,255,0) 10%,
+                rgba(255,255,255,0) 90%,
+                rgba(255,255,255,0.1) 100%
+            );
+        }
+        .building:nth-child(1) { height: 280px; }
+        .building:nth-child(2) { height: 350px; }
+        .building:nth-child(3) { height: 420px; }
+        .building:nth-child(4) { height: 380px; }
+        .building:nth-child(5) { height: 450px; }
+        .building:nth-child(6) { height: 320px; }
+        .building:nth-child(7) { height: 400px; }
+        .building:nth-child(8) { height: 360px; }
+        .building:nth-child(9) { height: 300px; }
+        .building:nth-child(10) { height: 340px; }
+        
+        .windows {
+            position: absolute;
+            top: 10%;
+            left: 15%;
+            right: 15%;
+            bottom: 0;
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 4px;
+            padding: 4px;
+        }
+        .window {
+            background: #ffd700;
+            opacity: 0.3;
+            animation: flicker 4s infinite alternate;
+        }
+        @keyframes flicker {
+            0%, 100% { opacity: 0.3; }
+            50% { opacity: 0.5; }
+        }
+    </style>
+</head>
+<body>
+    <div class="skyline">
+        <div class="building">
+            <div class="windows">
+                <div class="window"></div>
+                <div class="window"></div>
+                <div class="window"></div>
+                <div class="window"></div>
+                <div class="window"></div>
+                <div class="window"></div>
+            </div>
+        </div>
+        <div class="building">
+            <div class="windows">
+                <div class="window"></div>
+                <div class="window"></div>
+                <div class="window"></div>
+                <div class="window"></div>
+                <div class="window"></div>
+                <div class="window"></div>
+            </div>
+        </div>
+        <div class="building">
+            <div class="windows">
+                <div class="window"></div>
+                <div class="window"></div>
+                <div class="window"></div>
+                <div class="window"></div>
+                <div class="window"></div>
+                <div class="window"></div>
+            </div>
+        </div>
+        <div class="building">
+            <div class="windows">
+                <div class="window"></div>
+                <div class="window"></div>
+                <div class="window"></div>
+                <div class="window"></div>
+                <div class="window"></div>
+                <div class="window"></div>
+            </div>
+        </div>
+        <div class="building">
+            <div class="windows">
+                <div class="window"></div>
+                <div class="window"></div>
+                <div class="window"></div>
+                <div class="window"></div>
+                <div class="window"></div>
+                <div class="window"></div>
+            </div>
+        </div>
+        <div class="building">
+            <div class="windows">
+                <div class="window"></div>
+                <div class="window"></div>
+                <div class="window"></div>
+                <div class="window"></div>
+                <div class="window"></div>
+                <div class="window"></div>
+            </div>
+        </div>
+        <div class="building">
+            <div class="windows">
+                <div class="window"></div>
+                <div class="window"></div>
+                <div class="window"></div>
+                <div class="window"></div>
+                <div class="window"></div>
+                <div class="window"></div>
+            </div>
+        </div>
+        <div class="building">
+            <div class="windows">
+                <div class="window"></div>
+                <div class="window"></div>
+                <div class="window"></div>
+                <div class="window"></div>
+                <div class="window"></div>
+                <div class="window"></div>
+            </div>
+        </div>
+        <div class="building">
+            <div class="windows">
+                <div class="window"></div>
+                <div class="window"></div>
+                <div class="window"></div>
+                <div class="window"></div>
+                <div class="window"></div>
+                <div class="window"></div>
+            </div>
+        </div>
+        <div class="building">
+            <div class="windows">
+                <div class="window"></div>
+                <div class="window"></div>
+                <div class="window"></div>
+                <div class="window"></div>
+                <div class="window"></div>
+                <div class="window"></div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
